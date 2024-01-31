@@ -1,0 +1,20 @@
+*,
+html {
+    margin:0;
+    padding:0;
+}
+
+.ul-navbar {
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    border:1px solid gold;
+    list-style-type: none;
+    padding:10px;
+    margin:10px;
+    color:white;
+}
