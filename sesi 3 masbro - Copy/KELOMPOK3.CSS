@@ -1,0 +1,283 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); 
+    transition: background-color 0.3s ease;
+    width:100%;
+    z-index: 1000;
+    top:0;
+}
+
+.navbar.fixed-navbar {
+  top: 0;
+}
+
+.navbar.transparent {
+    background-color: transparent !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Mengubah gaya link pada navbar */
+.navbar-nav .nav-link {
+    color: rgb(27, 1, 1); /* Warna teks menjadi putih */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+/* Mengatur warna latar belakang dan teks pada dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang hitam dengan transparansi */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Mengubah warna teks pada dropdown menjadi putih */
+.dropdown-content a {
+    color: white;
+}
+
+/* Mengubah warna latar belakang saat dropdown hover */
+.dropdown-content a:hover {
+    background-color: #333; /* Warna latar belakang gelap saat hover */
+}
+
+/* Menampilkan dropdown ketika tombol dropdown di-hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mengatur gaya link di dalam dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* Mengubah gaya link pada dropdown ketika di-hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Warna latar belakang abu-abu saat hover */
+}
+.carousel-inner {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.IMAGECAROUSEL {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    justify-self: center;
+}
+
+.IMAGECAROUSEL1 {
+    width: 35%;
+    height: 80%;
+    background-color: black;
+    box-sizing: content-box;
+}
+
+.IMAGECAROUSEL2 {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}
+
+.carousel-inner {
+    background-color: black;
+}
+
+/* Tambahkan efek paralaks pada gambar dalam carousel */
+.parallax img {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform ease-out 0.3s;
+}
+
+.parallax:hover img {
+    transform: translate3d(0px, -20px, 0px); /* Sesuaikan dengan efek yang diinginkan */
+}
+
+/* Tambahkan efek hover pada kartu */
+.hover-effect .card {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect .card:hover {
+    transform: scale(1.05); /* Sesuaikan dengan efek yang diinginkan */
+}
+
+.post-outer {
+    width: 70%; /* Lebar konten */
+    margin: 0 auto; /* Membuat konten menjadi pusat */
+    background-color: #f8f8f8; /* Warna latar belakang */
+    padding: 20px; /* Jarak antara konten dengan tepi */
+    border-radius: 10px; /* Sudut bulatan untuk konten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+  }
+  
+  .post {
+    margin-bottom: 20px; /* Jarak antara postingan */
+  }
+  
+  h3.post-title {
+    color: #333; /* Warna judul */
+  }
+  
+  .post-body {
+    text-align: justify; /* Rata kanan kiri konten */
+  }
+  
+  .post-footer {
+    border-top: 1px solid #ddd; /* Garis atas footer */
+    padding-top: 10px; /* Jarak antara footer dengan konten */
+  }
+  
+  .jump-link a {
+    color: #4285f4; /* Warna link baca selengkapnya */
+  }
+  
+  .date-header {
+    text-align: center; /* Rata tengah tanggal */
+    margin-bottom: 20px; /* Jarak antara tanggal dengan postingan */
+    font-size: 24px; /* Ukuran tanggal */
+    color: #666; /* Warna tanggal */
+  }
+  
+  .date-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post-outer,
+  .date-outer {
+    max-width: 800px; /* Lebar maksimum */
+    margin: 0 auto 40px; /* Membuat konten tanggal menjadi pusat */
+  }
+  /* Gaya untuk container utama */
+.date-outer {
+    margin-bottom: 30px;
+  }
+  
+  /* Gaya untuk header tanggal */
+  .date-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Gaya untuk setiap posting */
+  .post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk judul posting */
+  .post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Gaya untuk gambar posting */
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Gaya untuk konten posting */
+  .post-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Gaya untuk tombol baca selengkapnya */
+  .jump-link {
+    margin-top: 15px;
+  }
+  
+  /* Gaya untuk footer posting */
+  .post-footer {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Gaya untuk ikon share */
+  .post-share-buttons {
+    margin-top: 10px;
+  }
+  
+  /* Gaya untuk tombol share */
+  .share-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Gaya untuk tombol share saat dihover */
+  .share-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding:  10px;
+    text-align: center;
+    width: 100%;
+    position: bottom;
+    bottom: 0;
+    
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: right;
+
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
